@@ -48,5 +48,13 @@ public class Order {
 		this.client = client;
 	}
 	
+	public void addOrderItem(OrderItem orderItems) {
+		orderItem.add(orderItems);
+	}
+
+	public void removeOrderItem(OrderItem orderItems) {
+		orderItem.remove(orderItems);
+	}
+
 	
 }
