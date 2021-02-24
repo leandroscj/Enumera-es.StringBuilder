@@ -56,5 +56,12 @@ public class Order {
 		orderItem.remove(orderItems);
 	}
 
+	public Double total() {
+		double sum = 0;
+		for (OrderItem orderItem2 : orderItem) {
+			sum += orderItem2.subTotal();
+		}
+		return sum;
+	}
 	
 }
